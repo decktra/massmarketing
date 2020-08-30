@@ -770,7 +770,12 @@ h3 [class*=" fa-"] {
 
 /* Background Overlay */
 .overlay {
-	background: rgba(0,0,0,.5) url(images/overlay.png) repeat;
+	background:
+		linear-gradient(
+			rgba(0, 0, 0, 0.7),
+			rgba(0, 0, 0, 0.7)
+		),
+		url(images/overlay.png) repeat;
 	height: 100%;
 	left: 0;
 	position: fixed;
@@ -891,9 +896,8 @@ h3 [class*=" fa-"] {
 }
 
 .subtitle {
-	font-size: 14px;
+	font-size: 20px;
 	letter-spacing: 1px;
-	text-transform: uppercase;
 }
 
 /* Countdown timer */
